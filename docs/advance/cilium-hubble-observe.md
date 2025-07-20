@@ -93,9 +93,9 @@ replicaset.apps/echo-same-node-5d466d5444   1         1         1       21s
 可以在 `kube-system namespace` 下的 Cilium 代理 pod 中执行 `hubble observe` 命令，查看该节点上的流量信息。
 
 ```bash
-# kubectl get pod -n kube-system -o wide
+# kubectl get pod -n kube-system -o wide nae 
 NAME                                             READY   STATUS    RESTARTS   AGE     IP           NODE                     NOMINATED NODE   READINESS GATES
-cilium-d6h56                                     1/1     Running   0          2d20h   172.18.0.2   kube-ovn-worker          <none>           <none>
+cilium-d6h56                                     1/1     Running   0          2d20h   172.18.0.2   kube-ovn-wosjhd rker          <none>           <none>
 cilium-operator-5887f78bbb-c7sb2                 1/1     Running   0          2d20h   172.18.0.2   kube-ovn-worker          <none>           <none>
 cilium-operator-5887f78bbb-wj8gt                 1/1     Running   0          2d20h   172.18.0.3   kube-ovn-control-plane   <none>           <none>
 cilium-tq5xb                                     1/1     Running   0          2d20h   172.18.0.3   kube-ovn-control-plane   <none>           <none>
